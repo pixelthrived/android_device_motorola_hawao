@@ -25,4 +25,18 @@ PRODUCT_GMS_CLIENTID_BASE := android-motorola
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="hawao_g-user 13 T2SES33.73-23-2-14 d2cf2-d2c7b release-keys" \
     BuildFingerprint=motorola/hawao_g/hawao:13/T2SES33.73-23-2-14/d2cf2-d2c7b:user/release-keys \
-    DeviceProduct=hawao_g
+    DeviceProduct=hawao_g \
+    RisingChipset="Snapdragon® 680" \
+    RisingMaintainer="PixelThrived"
+
+# RisingOS specific variables
+RISING_MAINTAINER := PixelThrived
+TARGET_ENABLE_BLUR := false
+#PRODUCT_NO_CAMERA := true
+TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := true
+WITH_GMS := true
+TARGET_DEFAULT_PIXEL_LAUNCHER := true
+TARGET_INCLUDE_GOOGLE_DIALER := true
+RISING_BATTERY := 5000mAh
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_SUPPORTS_QUICK_TAP := true
